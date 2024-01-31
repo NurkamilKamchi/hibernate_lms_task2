@@ -41,7 +41,7 @@ public class UserServiceTest {
         try {
             userService.dropUsersTable();
             userService.createUsersTable();
-            userService.saveUser(testName, testLastName, testAge);
+            userService.saveUser("asdfas", "Asfg", (byte)55);
 
             User user = userService.getAllUsers().get(0);
 
